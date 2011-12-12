@@ -31,3 +31,12 @@ Step 7. Everything SHOULD now be working. If it isn't...well...then
 	I won't answer support requests :)
 
 Step 8. Improve the game!
+
+Step 9. (Optional - Production Environment)
+	To make the game -alive- you have to set up CRON scripts
+	for each of the PHP files in the cron/ folder.
+
+------	Settings:
+	patient.php - every 15 minutes
+	event.php - every 30 minutes
+	salary.php - every 1 day

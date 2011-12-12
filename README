@@ -1,0 +1,30 @@
+Hospital Entrepreneur
+
+:About
+Hospital Entrepreneur was meant to be a text based online interactive game, 
+based on the popular game Theme Hospital, released by bullfrog studios.
+
+It was created by Arne-Christian Blystad, together with Dale Maison
+and Oliver Cross. However, times have changed and the Lead Developer,
+Arne-Christian Blystad, myself, have had his priorities changed.
+
+Therefore, the whole Hospital Entrepreneur sourcecode is released to the
+general public. The changes I have made is released under the
+Creative Commons Attributon 3.0 Unported license. Also Hospital Entrepreneur
+is built upon CodeIgniter, which follows its own license. Both are included
+in seperate LICENSE files.
+
+You are free to fork and distribute your changes, for both non-commercial
+and commercial uses. 
+
+:Credits
+Silk Icons - http://www.famfamfam.com/lab/icons/silk/
+jQuery - http://jquery.com/
+jQuery UI - http://jqueryui.com/
+All jQuery Plugins I've used, thank you for the great work developers.
+
+:Licenses
+LICENSE_HE - Hospital Entrepreneur License
+LICENSE_CI - CodeIgniter License
+There is probably some licenses that I have forgot. In which case:
+	- Sorry :(

@@ -1,0 +1,61 @@
+
+<table border="0" cellspacing="5" cellpadding="4" align="center">
+	<tr valign="top">
+		<td class="front_green">
+			<h1>No downloads required!</h1>
+			<p>The game is completely based in a web browser, there is no requirement for you to download anything to play the game what-so-ever. (Except a web browser ofcourse, but since your viewing this page, I'm just going to assume you already have that)</p>
+		</td>
+		<td class="front_blue">
+			<h1>Invite your friends!</h1>
+			<p>The best part about this game is you don't need to be lonely while your playing, you can play with your friends and there's no restrictions on what you can do. (Well, actually there is, but there nothing major)</p>
+		</td>
+		<td class="front_red">
+			<h1>It's completely free!</h1>
+			<p>Another feature about this game is that it is absolutely free! You do not have to pay any subscription fee. (Like World of Warcraft)
+</p>
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellspacing="5" cellpadding="4" align="center">
+	<tr valign="top">
+		<td class="front_box front_box_news">
+			<h1>Latest News</h1>
+			<ul>
+<?php
+foreach($latestNews as $row)
+{
+	echo "<li><a href=\"/index.php/news/read/{$row[id]}\">{$row[title]}</a></li>\n";
+}
+?>
+			</ul>
+			<br />
+			<a href="/index.php/news/list">More news</a>
+		</td>
+		<td class="front_box front_box_forum">
+			<h1>Latest forum posts</h1>
+			<ul>
+				<li><a href="#">Hospital 1</a></li>
+				<li><a href="#">Hospital 2</a></li>
+				<li><a href="#">Hospital 3</a></li>
+				<li><a href="#">Hospital 5</a></li>
+				<li><a href="#">Hospital 4</a></li>
+			</ul>
+			<br />
+			<a href="#">More discussions</a>
+		</td>
+		<td class="front_box front_box_top5">
+			<h1>Top 5 Hospitals</h1>
+			<ul>
+<?php
+foreach($top5 as $row)
+{
+	echo "<li><a href=\"/index.php/highschore/show/{$row[userID]}\">{$row[user_alias]}</a></li>\n";
+}
+?>
+			</ul>
+			<br />
+			<a href="/index.php/highscore/list">Top hospitals in Hospital Entrepeneur</a>
+		</td>
+	</tr>
+</table>

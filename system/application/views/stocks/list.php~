@@ -1,0 +1,43 @@
+<h2>My Stocks</h2>
+<p>Welcome to the My Stocks Stock Exchanger window. Here you see your own stocks, how many you own in a hospital and their value.
+<br /><br />
+<b>You currently have used: </b> <?=$totalStocks?> / 1000000 <br />
+<table class="table">
+<thead>
+	<tr class="header">
+		<th colspan="6">
+			Your Stocks
+		</th>
+	</tr>
+	<tr class="subheader">
+		<th>Title</th>
+		<th>Stock Value</th>
+		<th style="text-align: center">Current number of stocks</th>
+		<th style="text-align: center">Total Value</th>
+		<th style="text-align: center">Buy/Sell stocks</th>
+		<th></th>
+	</tr>
+</thead>
+<tbody>
+<?php
+foreach($user_stock as $stocks)
+{
+if ( $r == 1 ) { $r = 0; $row = "row2" ; } else { $row = "row1"; $r = 1; }
+
+$total = round ( $stocks['stockValue'] * $user_stock[ $stocks['id'] ] [ 'amount' ] ) . "$";
+
+echo "<form action=\"/index.php/stocks/buy_stocks/{$stocks[id]}\" method=\"post\">
+	<tr class='{$row}'>
+		<td style=\"\"><a href='/index.php/user/{$stocks[id]}'>{$stocks[user_alias]}</a></td>
+		<td style=\"text-align: center;\">{$stocks[stockValue]}$</td>
+		
+		<td style=\" text-align: center;\">{$user_stock[ $stocks[id] ] [ amount ]}</td>
+		<td style=\"text-align: center;\">{$total}</td>
+		<td style=\" text-align: center;\"><input type='text' id='amount' name='amount' /><input type='hidden' name='price' value='{$stocks[value]}'/></td>
+		<td style=\" text-align: center;\"><input type='submit' class='inputSubmit' name='Submit' value='Purchase' />&nbsp;<input type='submit' class='inputSubmit' name='Sell' value='Sell' /></td>
+	</tr>
+</form>";
+}
+?>
+</tbody>
+</table>

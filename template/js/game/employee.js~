@@ -1,0 +1,9 @@
+$(document).ready(function() 
+    { 
+        $("#hire").tablesorter({
+			sortList: [[0,0], [1,0]],
+			headers: { 0: { sorter: false}, 1: {sorter: false} }
+			}); 
+    } 
+); 
+    

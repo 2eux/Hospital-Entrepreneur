@@ -1,0 +1,37 @@
+<?php
+if($authLevel == "Admin") {
+?>
+	<form action="/index.php/user/edit/<?=$user[0]['id']?>" method="post"><input type="submit" value="Admin - Update Profile" style="float: right; margin-bottom: 15px;" class="inputAdmin" /></form>
+<?php
+ }
+if($myProfile == true) {
+?>
+	<form action="/index.php/user/edit" method="post"><input type="submit" value="Update My Profile" style="float: right; margin-bottom: 15px; margin-right: 25px;" class="inputSubmit" /></form><br />
+<?php
+}
+?>
+
+<table class="table">
+	<thead>
+		<tr class="header">
+			<th colspan=4><?=$user[0]["user_alias"]?></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row1 profile" style="width: 50%"><img src="/template/images/icons/user.png" /><b>Hospital Owner</b></td>
+			<td class="row1 profile" style="width: 50%"><?=$user[0]["user_name"]?></td>
+
+			<td colspan=2 rowspan=8 class="row2" style="width: 300px">
+				<div style="width: 300px; height: 200px; background-color: #FFF; border: 1px solid #000"></div>
+			</td>
+		</tr>
+		<tr><td class="row1 profile"><img src="/template/images/icons/chart_curve.png" /><b>Stock Value</b></td><td class="row1"><?php echo number_format($user[0]["stockValue"], 2, ',', ' ');?></td></tr>
+		<tr><td class="row1 profile"><img src="/template/images/icons/building.png" /><b>Hospital Type</b></td><td class="row1"><?=$hospital[0]["title"]?></td></tr>
+		<tr><td class="row1 profile"><img src="/template/images/icons/money.png" /><b>Money</b></td><td class="row1"><?php echo number_format($user[0]["money"], 2, ',', ' ');?></td></tr>
+		<tr><td class="row1 profile"><img src="/template/images/icons/money_euro.png" /><b>Company Value</b></td><td class="row1"><?php echo number_format($user[0]["worth"], 2, ',', ' ');?></td></tr>
+		<tr><td class="row1 profile"><img src="/template/images/icons/user_suit.png" /><b>Patients Cured</b></td><td class="row1"><?=$user[0]["patientsCured"]?></td></tr>
+		<tr><td class="row1 profile"><img src="/template/images/icons/clock.png" /><b>Hours In Game</b></td><td class="row1"><?=$user[0]["hoursInGame"]?></td></tr>
+		<tr><td class="row1 profile"><img src="/template/images/icons/group.png" /><b>Number of Employees</b></td><td class="row1"><?=$user[0]["numEmployee"]?></td></tr>
+	</tbody>
+</table>

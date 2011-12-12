@@ -1,0 +1,86 @@
+<form action="/index.php/user/editPOST" method="post">
+<fieldset>
+	<legend>Password</legend>
+	<div class="optional">
+	<label for="password">Password:</label>
+		<input type="password" name="password" id="password" />
+	</div>
+	<div class="optional">
+	<label for="password_repeat">Repeat Password:</label>
+		<input type="password" name="password_repeat" id="password_repeat" />
+	</div>
+</fieldset>
+<fieldset>
+	<legend>Logo</legend>
+	<div class="optional">
+	<label for="avatar_link">Address to Logo: <br />Must be to either a Imageshack, Flicker or Tinypic Image</label>
+	<input type="text" value="http://" name="avatar_link" id="avatar_link" />
+	</div>
+</fieldset>
+<?php
+if($authLevel == "Admin")
+{
+?>
+<fieldset>
+	<legend>Admin Values</legend>
+	
+	<div class="required">
+	<label for="user_name">Username:</label>
+		<input type="text" name="user_name" id="user_name" value="<?=$result['user_name'];?>" />
+	</div>
+
+	<input type="hidden" id="id" name="id" value="<?=$result['id']?>" />
+
+	<div class="required">
+	<label for="user_alias">Hospital Name:</label>
+		<input type="text" id="user_alias" name="user_alias" value="<?=$result['user_alias'];?>" />
+	</div>
+
+	<div class="required">
+	<label for="email">Email:</label>
+		<input type="text" id="email" value="<?=$result['email'];?>" name="email" />
+	</div>
+
+	<div class="required">
+	<label for="money">Money:</label>
+		<input type="text" id="money" value="<?=$result['money'];?>" name="money" />
+	</div>
+
+	<div class="required">
+	<label for="numPills">Number of Pills:</label>
+		<input type="text" id="numPills" value="<?=$result['numPills'];?>" name="numPills" />
+	</div>
+
+	<div class="required">
+	<label for="security_role_id">Security Level:</label>
+		<input type="text" id="security_role_id" value="<?=$result['security_role_id']?>" name="security_role_id" />
+	</div>
+
+	<div class="required">
+	<label for="activated">Activated:</label>
+		<input type="text" id="activated" value="<?=$result['activated']?>" id="activated" />
+	</div>
+
+	<div class="required">
+	<label for="stocksRemaining">Stocks Remaining:</label>
+		<input type="text" id="stocksRemaining" value="<?=$result['stocksRemaining'];?>" id="stocksRemaining" />
+	</div>
+
+	<div class="required">
+	<label for="hospitalID">Hospital ID:</label>
+		<input type="text" id="hospitalID" value="<?=$result['hospitalID']?>" id="hospitalID" />
+	</div>
+
+	<div class="required">
+	<label for="hospitalArea">Hospital Area:</label>
+		<input type="text" id="hospitalArea" value="<?=$result['hospitalArea']?>" id="hospitalArea" />
+	</div>
+
+</fieldset>
+<?php
+}
+?>
+<fieldset>
+	<input type="submit" name="submit" id="submit" class="inputSubmit" value="Update Profile!" />
+</fieldset>
+</form>

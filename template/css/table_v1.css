@@ -1,0 +1,42 @@
+
+.content .table {
+	font-size: 12px;
+	width: 100%;
+}
+.content .table thead .header {
+	background-color: #5ca8ce;
+	text-align: left;
+
+}
+.content .table thead .header th {
+	padding: 8px;
+	font-weight: normal;
+	color: #FFF;
+	font-size: 14px;
+}
+.content .table thead .subheader {
+	background-color: #3c83a7;
+	text-align: left;
+}
+.content .table thead .subheader th {
+	font-weight: bold;
+	padding: 3px;
+	color: #FFF;
+	font-size: 10px;
+}
+.content .table tbody tr td {
+	font-weight: normal;
+	font-size: 11px;
+	padding: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.content .table tbody tr td a {
+	color: #005a8c;
+}
+.content .table tbody .row1 {
+	background-color: #eef5fb;
+}
+.content .table tbody .row2 {
+	background-color: #d7e8f6;
+}

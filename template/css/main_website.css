@@ -1,0 +1,177 @@
+body, html {
+	font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	margin: 0;
+	padding: 0;
+}
+
+.logo_gradient { background-image: url("/template/images/web2front/logo_gradient.gif"); background-repeat: repeat-x; height: 220px; }
+.logo	{
+	background-image: url("/template/images/web2front/logo.gif");
+	background-repeat: no-repeat;
+	width: 1024px;
+	height: 220px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.header { background-image: url("/template/images/web2front/header.gif"); color: #FFFFFF; }
+.header ul { list-style-type: none; width: 1024px; margin-left: auto; margin-right: auto; height: 30px; margin-top: 0; margin-bottom: 0; padding-top: 10px; }
+.header ul li { display: inline; margin-right: 10px; }
+.header ul li a { text-decoration: none; color: #0099cc; }
+.header ul li a:hover { text-decoration: underline; }
+
+.copyright_background {
+display: none;	
+}
+
+
+.bottom_boundary { padding-top: 100px; }
+
+.left {
+float: left;
+padding-top: 15px;
+padding-left: 30px;
+}
+.left ul { list-style-type:  none; margin: 0; padding-left: 2px;  }
+.left ul:first-child { margin-bottom: 30px; }
+.left ul:first-child li{ padding: 0 20px; font-weight: bold; padding-right: 30px;  }
+.left ul:first-child li.last { padding: 0px 0px; font-weight: bold; padding:0; }
+.left ul li { display: inline; }
+.left ul li span { display: none; font-size: 14px; font-weight: bold; margin-left: 2px; margin-top: 2px; padding-top: 2px; }
+
+.register_btn {
+	padding: 29px;
+	text-align: center;
+	color: #000;
+
+	padding-left: 60px;
+	padding-right: 60px;
+
+
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 12px;
+	text-shadow: #acacac 2px 2px 1px;
+	background-image: url("/template/images/web2front/btn_full.png");
+	background-repeat: no-repeat;
+	background-position: 0 -3px;
+}
+.register_btn.last { background-image: url("/template/images/web2front/btn_full_2nd.png"); }
+.register_btn:hover { background-position: 0 -73px; }
+.register_btn:active { background-position: 0 -146px; }
+.register_btn a { color: #000000; text-decoration: none; }
+.register_btn a:last-child {  }
+
+.right { 
+float: right;
+width: 460px;
+display: inline;
+
+
+}
+
+form {
+	float: left;
+	display: inline;
+}
+form h2 {
+	font-size: 12px;
+}
+form label {
+	
+}
+
+form div.username label { display: block; }
+form div.password label { display: block; }
+
+form div.username { display: inline; position: absolute; float:left; width: 200px; }
+form div.password { display: inline; position: absolute; margin-left: 198px; }
+
+form div.username input, form div.password input { width: 180px; padding: 5px; border: 1px solid #00adc6; background-color: #c6faff; }
+form div.submit button { border: 1px solid #a6a6a6; position: absolute; margin-top: -49px; margin-left: 390px; padding: 5px; background-image: url("/template/images/web2front/login.png"); background-color: transparent; border-color: transparent; width: 70px; background-position: -1px -8px; color: #FFFFFF; }
+form div.submit button:hover { background-position: -1px -39px; }
+form div.submit buton:active { background-position: -1px -69px; }
+
+.subitems ul { list-style-type:  none; margin: 0; padding: 0; margin-top: 30px; }
+.subitems ul li { display: inline; margin-right: 95px; }
+
+.subitems ul li a { text-decoration: none; color: #000; text-decoration: underline; }
+.subitems ul li a:hover { text-decoration: none; }
+
+
+.front_blue, .front_red, .front_green {
+	width: 311px;
+	margin: 5px;
+}
+.front_blue h1, .front_red h1, .front_green h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding-bottom: 2px;
+}
+.front_blue h1 { color: #136eba; border-bottom: 3px solid #136eba; }
+.front_red h1  { color: #ba5614; border-bottom: 3px solid #ba5614; }
+.front_green h1 { color: #b7d045; border-bottom: 3px solid #b7d045; }
+
+.front_blue p, .front_red p, .front_green p {
+	margin: 0;
+	padding: 0;
+	color: #888888;
+}
+
+.front_box {
+	width: 424px;
+	height: 286px;
+	padding-left: 10px;
+}
+.front_box h1 {
+	margin: 0;
+	padding: 0;
+	margin-left: 5px;
+	margin-top: 2px;
+	font-size: 18px;
+}
+
+.front_box ul {
+	margin: 0;
+	padding: 0;
+	margin-left: 30px;
+}
+.front_box ul li { 
+	color: #000;
+	width: 400px;
+	padding: 8px;
+}
+
+.front_box a {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px dotted #000;
+	margin: 5px;
+}
+.front_box a:hover { font-weight: bold; }
+.front_box ul li a {
+	text-decoration: none;
+	border-bottom-width: 0;
+	margin-left: 0;
+}
+.front_box ul li:hover {
+	background-color: #FFF;
+}
+.front_box ul li a:hover {
+	font-weight: bold;
+}
+
+.front_box_top5 { color: #a0421d; 	list-style-image:url("/template/images/icons/building.png"); }
+.front_box_news { list-style-image:url("/template/images/icons/page_white_text.png"); }
+.front_box_forum { color: #0099cc; list-style: none; }
+
+.fb_button { display: none; margin-top: -30px !important; position: absolute; }
+
+.button {padding: .6em 1em .6em 20px;text-decoration: none;position: absolute; margin-top: -30px; width: 170px; background-color: #FFF; background-image: none; color: #000;}
+.button span.ui-icon {margin: 0 0px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+.buttonIcon { padding-left: 28px; }
+.buttonIcon img { border: 0; position: absolute; margin-top: 0px; margin-left: -20px; }
+

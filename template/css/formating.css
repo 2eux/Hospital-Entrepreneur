@@ -1,0 +1,129 @@
+body{ 
+	font: 62.5% Verdana, Arial, sans-serif; 
+	margin: 0; 
+	padding: 0;
+	height: 100%;
+}
+img { border: 0; }
+table { border-spacing: 0; border: 0; }
+hr { border: 0; background-color: #cecece; height: 1px; }
+
+h1 {
+	font-family: Arial, Helvetica, "Nimbus Sans", FreeSans, Malayalam, sans-serif;
+/*
+	font-size: 30px;
+	margin: 4px;
+	padding: 4px;
+	padding-left: 0;
+	margin-left: 0;
+*/
+
+    font-size: 32pt;
+    line-height: 27pt;
+    letter-spacing: -3px;
+    margin: 0 0 14px 0;
+
+
+}
+h2 {
+    letter-spacing: -1px;
+    color: #000;
+    font-size: 15pt; 
+    line-height: 15pt;
+    font-family: Georgia, Times, serif;
+    font-weight: normal;
+    margin: 0 0 5px 0;
+
+}
+.grey { color: #999; }
+h3 {
+	font-family: "Cambria",Georgia,"Nimbus Roman No9 L",serif;
+	font-size: 18px;
+	margin: 2px;
+	padding: 2px;
+	padding-left: 0;
+	margin-left: 0;
+}
+p {
+	font-size: 11px;
+}
+a {
+	color: #005a8c;
+}
+a:hover {
+	color: #000;
+}
+
+.table {
+	font-size: 12px;
+	width: 100%;
+}
+.table thead .header {
+	background-color: #5ca8ce;
+	text-align: left;
+
+}
+.table thead .header th {
+	padding: 8px;
+	font-weight: normal;
+	color: #FFF;
+	font-size: 14px;
+}
+.table thead .subheader {
+	background-color: #3c83a7;
+	text-align: left;
+}
+.table thead .subheader th {
+	font-weight: bold;
+	padding: 3px;
+	color: #FFF;
+	font-size: 10px;
+}
+.table tbody tr td {
+	font-weight: normal;
+	font-size: 11px;
+	padding: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.table tbody tr td a {
+	color: #005a8c;
+}
+.table tbody .row1 {
+	background-color: #eef5fb;
+}
+.table tbody .row2 {
+	background-color: #d7e8f6;
+}
+
+
+ul.faq
+{
+	list-style: none;
+}
+ul.faq li.question
+{
+	background-image: url("/template/images/icons/page.png");
+	background-repeat: no-repeat;
+	background-position: -22px;
+    letter-spacing: -1px;
+    color: #999;
+    font-size: 15pt; 
+    line-height: 15pt;
+    font-family: Georgia, Times, serif;
+    font-weight: normal;
+    margin: 0px 0px 5px 0;
+	padding: 8px;
+	padding-left: 0;
+	border-bottom: 3px solid #999;
+}
+ul.faq li.question img {
+	position: absolute;
+	margin-left: -22px;
+	margin-top: 4px;
+}
+ul.faq li.answer
+{
+	font-size: 11px;
+
+}

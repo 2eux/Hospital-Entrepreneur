@@ -1,0 +1,8 @@
+/*
+** All the different form buttons will have their necessary CSS Icons here
+** Normal buttons (a) will not. They will have that included in their HTML
+*/
+
+.iconHire { padding-left: 26px !important; background-image: url("/template/images/icons/briefcase.png") !important; background-repeat: no-repeat !important; background-position: 5px 5px !important; }
+.iconKey { padding-left: 26px !important; background-image: url("/template/images/icons/key.png") !important; background-repeat: no-repeat !important; background-position: 5px 5px !important; }
+.iconKeyGo { padding-left: 26px !important; background-image: url("/template/images/icons/key_go.png") !important; background-repeat: no-repeat !important; background-position: 5px 5px !important; }

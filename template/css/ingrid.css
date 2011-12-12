@@ -1,0 +1,20 @@
+ul.pagination {
+	list-style: none;
+	padding: 5px;
+	margin-top: -2px;
+	border: 1px solid #a6a6a6;
+	background-color: #f6f6f6;
+}
+ul.pagination li {
+	padding: 5px;	
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+}
+ul.pagination li#current {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+ul.pagination li a img {
+	padding-top: 5px;
+}

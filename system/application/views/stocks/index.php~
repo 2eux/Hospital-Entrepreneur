@@ -1,0 +1,37 @@
+<h2>Current User Information</h2>
+<p>Welcome to the stock market. Here you can purchase stocks. You may not own more then 200 000 stocks <br />in any company or a total of 1 000 000 stocks.</p>
+<b>You currently have used: </b> <?=$totalStocks?> / 1 000 000 <br />
+
+<table class="table">
+<thead>
+	<tr class="header">
+		<th colspan="5">
+			Top 10 stocks
+		</th>
+	</tr>
+	<tr class="subheader">
+		<th>Title</th>
+		<th>Stock Value</th>
+		<th style="text-align: center">Current number of stocks</th>
+		<th style="text-align: center">Buy stocks</th>
+		<th></th>
+	</tr>
+</thead>
+<tbody>
+<?php
+foreach($top10 as $stocks)
+{
+if ( $r == 1 ) { $r = 0; $row = "row2" ; } else { $row = "row1"; $r = 1; }
+echo "<form action=\"/index.php/stocks/buy_stocks/{$stocks[id]}\" method=\"post\">
+	<tr class='{$row}'>
+		<td style=\"\"><a href='/index.php/user/{$stocks[id]}'>{$stocks[user_alias]}</a></td>
+		<td style=\"\">{$stocks[stockValue]}$</td>
+		<td style=\" text-align: center;\">{$user_stock[ $stocks[id] ] [ amount ]}</td>
+		<td style=\" text-align: center;\"><input type='text' id='amount' name='amount' /><input type='hidden' name='price' value='{$stocks[value]}' /></td>
+		<td style=\" text-align: center;\"><input type='submit' class='inputSubmit' name='Submit' value='Purchase' /></td>
+	</tr>
+</form>";
+}
+?>
+</tbody>
+</table>

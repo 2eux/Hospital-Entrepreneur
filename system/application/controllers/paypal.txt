@@ -1,0 +1,41 @@
+An instant payment notification was successfully received from arni13_1228393396_per@gmail.com on 03/04/2010 at 11:59 PM
+
+ Details:
+
+mc_gross: 20.00
+protection_eligibility: Ineligible
+address_status: confirmed
+payer_id: 4PX5L2VVQ4NVS
+tax: 0.00
+address_street: 1 Main St
+payment_date: 14:59:20 Mar 04, 2010 PST
+payment_status: Pending
+charset: windows-1252
+address_zip: 95131
+first_name: Test
+address_country_code: US
+address_name: Test User
+notify_version: 2.9
+custom: ffad9dd5adad7a05
+payer_status: verified
+address_country: United States
+address_city: San Jose
+quantity: 1
+verify_sign: ArWK9Qlp49be8kilSmZPApPhhyhzAu6mn8p4P9q-zz6jMEbDci6HJIld
+payer_email: arni13_1228393396_per@gmail.com
+txn_id: 3W733560KC2864934
+payment_type: instant
+last_name: User
+address_state: CA
+receiver_email: arni1348@gmail.com
+pending_reason: unilateral
+txn_type: web_accept
+item_name: Hospital Entrepreneur
+mc_currency: USD
+item_number: 0
+residence_country: US
+test_ipn: 1
+handling_amount: 0.00
+transaction_subject: ffad9dd5adad7a05
+payment_gross: 20.00
+shipping: 0.00

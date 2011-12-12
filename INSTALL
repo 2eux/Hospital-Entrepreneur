@@ -1,0 +1,33 @@
+INSTALL HOSPITAL-ENTREPRENEUR
+
+Step 1. Read the README file!
+
+Step 2. REQUIREMENTS:
+		* PHP version 5.1.6 or newer
+		* MySQL 4.1 or newer
+		* A webserver (This is tested on Apache 2.0)
+
+Step 3. Find your favourite text editor, open up the following file:
+	/system/application/config/config.php
+
+	Change $config["base_url"] to your webserver location.
+
+Step 4. Find your favourite text editor, open up the following file:
+	/system/application/config/database.php
+
+	Change the database settings to fit your database.
+
+Step 5. Deploy the admin_hospital.sql script in your favourite
+	MySQL Client. I recommend phpMyAdmin.
+
+Step 6. Open up your website, and create a new temporarily account.
+	As I havn't included any users in the basic script.
+	You will need to make this one admin by yourself.
+	To do so, you have th change the correct security permission.
+	I'll let you figure out how you do that :)
+
+Step 7. Everything SHOULD now be working. If it isn't...well...then
+	try and google your way through and find the answer.
+	I won't answer support requests :)
+
+Step 8. Improve the game!

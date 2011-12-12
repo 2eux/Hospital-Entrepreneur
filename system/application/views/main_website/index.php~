@@ -1,0 +1,60 @@
+
+<table border="0" cellspacing="5" cellpadding="4" align="center">
+	<tr valign="top">
+		<td class="front_green">
+			<h1>It's compleatly free!</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae quam lectus, vel facilisis felis. Pellentesque risus justo, sodales a vestibulum eget, varius vitae nisl. Aenean tortor sapien, venenatis ut cursus ultricies, laoreet nec ligula. Duis id viverra dolor. Sed vitae semper justo. Suspendisse congue lorem vitae nisi porttitor aliquet. In non libero eu est congue vulputate. Aliquam dapibus tempor risus eu pellentesque. Nam dapibus, velit dapibus rutrum tristique, mi massa aliquam ipsum, eget blandit arcu libero consequat nulla.</p>
+		</td>
+		<td class="front_blue">
+			<h1>Invite your friends!</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae quam lectus, vel facilisis felis. Pellentesque risus justo, sodales a vestibulum eget, varius vitae nisl. Aenean tortor sapien, venenatis ut cursus ultricies, laoreet nec ligula. Duis id viverra dolor. Sed vitae semper justo. Suspendisse congue lorem vitae nisi porttitor aliquet. In non libero eu est congue vulputate. Aliquam dapibus tempor risus eu pellentesque. Nam dapibus, velit dapibus rutrum tristique, mi massa aliquam ipsum, eget blandit arcu libero consequat nulla.</p>
+		</td>
+		<td class="front_red">
+			<h1>No downloads required!</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae quam lectus, vel facilisis felis. Pellentesque risus justo, sodales a vestibulum eget, varius vitae nisl. Aenean tortor sapien, venenatis ut cursus ultricies, laoreet nec ligula. Duis id viverra dolor. Sed vitae semper justo. Suspendisse congue lorem vitae nisi porttitor aliquet. In non libero eu est congue vulputate. Aliquam dapibus tempor risus eu pellentesque. Nam dapibus, velit dapibus rutrum tristique, mi massa aliquam ipsum, eget blandit arcu libero consequat nulla.</p>
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellspacing="5" cellpadding="4" align="center">
+	<tr valign="top">
+		<td class="front_box front_box_news">
+			<h1>Latest News</h1>
+			<ul>
+<?php
+foreach($latestNews as $row)
+{
+	echo "<li><a href=\"/index.php/news/read/{$row[id]}\">{$row[title]}</a></li>\n";
+}
+?>
+			</ul>
+			<br />
+			<a href="/index.php/news/list">More news</a>
+		</td>
+		<td class="front_box front_box_forum">
+			<h1>Latest forum posts</h1>
+			<ul>
+				<li><a href="#">Hospital 1</a></li>
+				<li><a href="#">Hospital 2</a></li>
+				<li><a href="#">Hospital 3</a></li>
+				<li><a href="#">Hospital 5</a></li>
+				<li><a href="#">Hospital 4</a></li>
+			</ul>
+			<br />
+			<a href="#">More discussions</a>
+		</td>
+		<td class="front_box front_box_top5">
+			<h1>Top 5 Hospitals</h1>
+			<ul>
+<?php
+foreach($top5 as $row)
+{
+	echo "<li><a href=\"/index.php/highschore/show/{$row[userID]}\">{$row[user_alias]}</a></li>\n";
+}
+?>
+			</ul>
+			<br />
+			<a href="#">Top hospitals in Hospital Entrepeneur</a>
+		</td>
+	</tr>
+</table>

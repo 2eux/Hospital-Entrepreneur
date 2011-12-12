@@ -1,0 +1,39 @@
+<table class="table">
+<thead>
+	<tr class="header">
+		<th colspan="4">Current hospitals</th>
+	</tr>
+	<tr class="subheader">
+		<th style="width: 16px;"></th>
+		<th>Building type</th>
+		<th>Building size</th>
+		<th style="width: 16px;"></th>
+	</tr>
+</thead>
+<tbody>
+<?php
+
+if(count($buildingInfo) == 0) {
+	echo "<tr row='row1'><td colspan=4 style='text-align:center'><i>You have not builded any rooms yet.</i></td></tr>";
+}
+else
+{
+
+	$r = 1;
+	foreach($buildingInfo as $z)
+	{	
+		foreach($z as $b)
+		{
+			if($r == 1) { $r = 0; $row = "row1"; } else { $r = 1; $row = "row2"; }
+			echo "<tr class='{$row}'>
+					<td><img src=\"/template/images/icons/building.png\" /></td>
+					<td>{$b[name]}</td>
+					<td>{$b[area][total]} m&#178;</td>
+					<td><a href=\"/index.php/building/delete_roomRq/{$b[id]}\"><img src=\"/template/images/icons/remove.png\" /></a></td>
+				</tr>";
+		}
+	}
+}
+?>
+</tbody>
+</table>

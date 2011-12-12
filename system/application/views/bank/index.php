@@ -1,0 +1,2 @@
+<h1>Euphemia Bank</h1>
+<p>Welcome to Euphemia Bank, the largest bank in the country of Nowhere! We provide you with excelent service and loans with both low and high interrest rate. Are you in a situation where you would like to expand your business, but havn't got quite the cash yet? Euphemia Bank is your solution!</p>

@@ -1,0 +1,40 @@
+<table class="table" width="100%" id="hire">
+<thead>
+	<tr class="header">
+		<th colspan="7">Hire Employees</th>
+	</tr>
+	<tr class="subheader">
+		<th style="width: 32px;"></th>
+		<th style="text-align: left;">Employee Name</th>
+		<th style="text-align: center";>Type</th>
+		<th style="text-align: center";>Salary</th>
+		<th style="text-align: center";>Skill level</th>
+		<th><!-- Increase salary --></th>
+	</tr>
+</thead>
+<tbody>
+<?php
+
+#print_r($employees_hired_id);
+#if(count($employees) == 0) { $employees = array(); }
+if(count($employees_hired_id) == 0) { $employees_hired_id = array(999999999999999999999999999999999999999999); }
+
+$r = 1;
+
+foreach($employees as $row)
+{
+if($r == 1) { $rowX = "row1"; $r = 0; } else { $rowX = "row2"; $r = 1; }
+?>
+	<tr class="<?=$rowX?>" id="employees_row_<?=$row[id]?>" <?php if(array_key_exists($row['id'],$employees_hired_id)) { echo "style=\"display: none\""; } ?>>
+		<td><?php /* FIXME Put real images here */ ?><img src="/template/images/people/surgeon.jpg" width="32" height="32" style="border: 1px solid #000;" border="0" alt="Placeholder IMG" /></td>
+		<td><?=$row['name']?></td>
+		<td style="text-align: left; width: 120px;"><?=$row['employeeType']?></td>
+		<td style="text-align: center"><?=$row['price']?></td>
+		<td style="text-align: center"><?=$row['skill']?><div align="center"><table class="progress-bar-bg"><tr><td width="<?=$row['skill']?>%" class="progress-bar-front"></td><td></td></tr></table></div></td>
+		<td style="text-align: center;"><form action="/index.php/units/ajax/hireEmployee" method="post"><input type="hidden" name="employeeID" value="<?=$row['id']?>" /><input type="submit" value="Hire" class="inputSubmit" /></form></a></td>
+	</tr>
+<?php
+}
+?>
+</tbody>
+</table>

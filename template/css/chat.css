@@ -1,0 +1,196 @@
+.chatbox {
+	position: fixed;
+	position:expression("absolute");
+	width: 225px;
+	display:none;
+}
+
+.chatboxhead {
+	background-color: #5ca8ce;
+	padding:3px;
+	color: #ffffff;
+
+	border-right:1px solid #5ca8ce;
+	border-left:1px solid #5ca8ce;
+}
+
+.chatbox_menutitle {
+	border: 1px solid #5ca8ce;
+	height: 12px;
+	padding: 6px;
+	color: #FFF;
+	background-color: #0099cc;
+	padding-left: 30px;
+}
+.chatbox_menutitle:hover{
+	background-color: #00628B;
+}
+.chatbox_menutitle img { 
+	position: absolute;
+	margin-left: -20px;
+	margin-top: -2px;
+}
+
+.chatboxblink {
+	background-color:#76cdf9;
+
+}
+
+.chatboxcontent {
+	font-family: arial,sans-serif;
+	font-size: 13px;
+	color: #333333;
+	height:200px;
+	width:209px;
+	overflow-y:auto;
+	overflow-x:auto;
+	padding:7px;
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	background-color: #ffffff;
+	line-height: 1.3em;
+}
+
+.chatboxinput {
+	padding: 5px;
+	background-color: #ffffff;
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+}
+
+.chatboxtextarea {
+	width: 206px;
+	height:44px;
+	padding:3px 0pt 3px 3px;
+	border: 1px solid #eeeeee;
+	margin: 1px;
+	overflow:hidden;
+	resize: none;
+}
+
+.chatboxtextareaselected {
+	border: 2px solid #a6a6a6;
+	margin:0;
+}
+
+.chatboxmessage {
+	margin-left:1em;
+}
+
+.chatboxinfo {
+	margin-left:-1em;
+	color:#666666;
+}
+
+.chatboxmessagefrom {
+	margin-left:-1em;
+	font-weight: bold;
+}
+
+.chatboxmessagecontent {
+	margin-left: -12px;
+	display: block;
+}
+
+.chatboxoptions {
+	width: 12px;
+	margin-top: -20px;
+	margin-right: 10px;	
+	float: right;
+}
+
+.chatboxoptions a {
+	text-decoration: none;
+	color: white;
+	font-weight:bold;
+	font-family:Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+}
+
+.chatboxtitle {
+	float: left;
+}
+
+/************** Chat toolbar **********/
+#bottom {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width: 100%;
+	/* background: #f6f6f6; */
+	height: 25px;
+	/* border-top: 1px solid #a6a6a6; */
+	text-align: left;
+}
+
+ul.menu_bottom {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul.menu_bottom li.nav { 
+	width: 150px; 
+	padding: 5px;
+	padding-left: 28px;
+	margin-left: 0;
+	border: 1px solid #a6a6a6;
+	border-bottom-width: 0;
+	margin-right: 25px;
+	background-color: #f6f6f6;
+}
+ul.menu_bottom li.nav:hover {
+	background-color: #c0c0c0;
+}
+ul.menu_bottom li { text-align: left; float: right; padding-right: 40px; }
+ul.menu_bottom li.nav img { position: absolute; margin-left: -22px; margin-top: -1px; }
+ul.menu_bottom li.sub { 
+	padding-right: 0; 
+	height: 298px; 
+	margin-top: -300px; 
+	background-color: #FFF; 
+	border: 1px solid #a6a6a6;
+	border-bottom-color: #FFF;
+	width: 183px; /* Box Width */
+	text-align: left;
+	margin-right: -185px; /* Box Align */
+
+}
+ul.menu_bottom li ul { 
+	display: block; 
+	margin: 0;
+	padding: 0;
+}
+ul.menu_bottom li ul.title {
+	padding: 2px; 
+	border-bottom: 1px solid #5ca8ce;
+	color: #FFF;
+	padding-left: 12px;
+	background-color: #5ca8ce;
+}
+
+ul.menu_bottom li ul.user {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+	overflow-x: hidden;
+	height: 280px;
+	overflow-y: scroll;
+	margin-left: 0px;
+	width: 184px; /* Scrollbar Width */
+}
+ul.menu_bottom li ul.user li img {
+	margin-left: -8px;
+	margin-right: 4px;
+	float: left;
+}
+ul.menu_bottom li ul.user li {
+	width: 138px;
+
+	padding: 7px;
+	padding-right: 14px;
+}
+ul.menu_bottom li ul.user a {  font-size: 12px; }
+ul.menu_bottom li ul.user a:hover { text-decoration: underline; }
+ul.menu_bottom li ul.user li:hover {
+	background-color: #f6f6f6;
+}

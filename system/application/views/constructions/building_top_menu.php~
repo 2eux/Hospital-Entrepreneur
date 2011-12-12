@@ -1,0 +1,31 @@
+<ul class="topmenu">
+<li ><a href="/index.php/building/build" style="-moz-border-radius-bottomleft: 6px; webkit-border-radius-bottomleft: 6px;">Expand Hospital</a></li>
+<li><a href="/index.php/building"  style="-moz-border-radius-bottomright: 6px; webkit-border-radius-bottomright: 6px;">Manage Hospital</a></li>
+</ul>
+
+<table class="table">
+<thead>
+	<tr class="header">
+		<th colspan="4">Current hospitals</th>
+	</tr>
+	<tr class="subheader">
+		<th></th>
+		<th>Building type</th>
+		<th>Building size</th>
+		<th></th>
+	</tr>
+</thead>
+<tbody>
+<tr><td colspan="4">
+<?php
+foreach($buildingInfo as $key => $val)
+{
+	print_r($val);
+	
+
+}
+?>
+</td></tr>
+
+</tbody>
+</table>
